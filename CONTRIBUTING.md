@@ -8,7 +8,7 @@ If you've found an area whereby this project does not behave in a sensible or pe
 
 #### Submitting a Pull Request
 
-All code in this project is developed around the example json:api implementation which can be found [here](). You can fire up the stock example api backed with this data store via:
+All code in this project is developed around the example json:api implementation which can be found [here](https://github.com/holidayextras/jsonapi-server). You can fire up the stock example api backed with this data store via:
 ```
 npm start
 ```
