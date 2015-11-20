@@ -21,7 +21,7 @@ This project conforms to the specification laid out in the [jsonapi-server handl
 
 ### Usage
 
-```
+```javascript
 jsonApi.define({
   resource: "comments",
   handlers: new jsonApi.SqlHandler({
