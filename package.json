@@ -7,8 +7,9 @@
     "jsonapi",
     "persistence",
     "store",
-    "mongodb",
-    "mongo"
+    "mysql",
+    "postgres",
+    "mssql"
   ],
   "main": "lib/sqlHandler.js",
   "author": "Oliver Rumbelow",
