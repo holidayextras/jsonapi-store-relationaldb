@@ -1,3 +1,10 @@
+[![Coverage Status](https://coveralls.io/repos/holidayextras/jsonapi-store-relationaldb/badge.svg?branch=master)](https://coveralls.io/r/holidayextras/jsonapi-store-relationaldb?branch=master)
+[![Build Status](https://travis-ci.org/holidayextras/jsonapi-store-relationaldb.svg?branch=master)](https://travis-ci.org/holidayextras/jsonapi-store-relationaldb)
+[![npm version](https://badge.fury.io/js/jsonapi-store-relationaldb.svg)](http://badge.fury.io/js/jsonapi-store-relationaldb)
+[![Code Climate](https://codeclimate.com/github/holidayextras/jsonapi-store-relationaldb/badges/gpa.svg)](https://codeclimate.com/github/holidayextras/jsonapi-store-relationaldb)
+[![Dependencies Status](https://david-dm.org/holidayextras/jsonapi-store-relationaldb.svg)](https://david-dm.org/holidayextras/jsonapi-store-relationaldb)
+
+
 # jsonapi-store-relationaldb
 
 `jsonapi-server-relationaldb` is a relationanal database backed data store for [`jsonapi-server`](https://github.com/holidayextras/jsonapi-server).
