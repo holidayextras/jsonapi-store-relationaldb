@@ -7,7 +7,7 @@
 
 # jsonapi-store-relationaldb
 
-`jsonapi-server-relationaldb` is a relationanal database backed data store for [`jsonapi-server`](https://github.com/holidayextras/jsonapi-server).
+`jsonapi-server-relationaldb` is a relational database backed data store for [`jsonapi-server`](https://github.com/holidayextras/jsonapi-server).
 
 This project conforms to the specification laid out in the [jsonapi-server handler documentation](https://github.com/holidayextras/jsonapi-server/blob/master/documentation/handlers.md).
 
@@ -22,9 +22,11 @@ This project conforms to the specification laid out in the [jsonapi-server handl
 ### Usage
 
 ```javascript
+var RelationalDbStore = require("jsonapi-store-relationaldb");
+
 jsonApi.define({
   resource: "comments",
-  handlers: new jsonApi.SqlHandler({
+  handlers: new RelationalDbStore({
     dialect: "mysql",
     host: "localhost",
     port: 3306,
