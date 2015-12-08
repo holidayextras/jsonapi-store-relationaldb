@@ -12,7 +12,7 @@ module.children[2].exports = function() {
     port: 3306,
     username: "root",
     password: null,
-    logging: console.log
+    logging: null
   });
 
   // Keep the handler around for after the test rig is live
