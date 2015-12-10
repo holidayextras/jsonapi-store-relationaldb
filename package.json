@@ -1,6 +1,6 @@
 {
   "name": "jsonapi-store-relationaldb",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Relational data store for jsonapi-server.",
   "keywords": [
     "json:api",
@@ -23,6 +23,9 @@
   },
   "dependencies": {
     "async": "1.5.0",
+    "debug": "2.2.0",
+    "lodash.assign": "3.2.0",
+    "lodash.omit": "3.1.0",
     "lodash.pick": "3.1.0",
     "sequelize": "3.14.0"
   },
@@ -35,7 +38,7 @@
     "coveralls": "2.11.2",
     "plato": "1.5.0",
     "mocha-performance": "0.1.0",
-    "jsonapi-server": "0.15.2"
+    "jsonapi-server": "1.0.1"
   },
   "scripts": {
     "test": "/bin/sh setupDatabase.sh && ./node_modules/mocha/bin/mocha --timeout 20000 -R spec ./test/*.js",
