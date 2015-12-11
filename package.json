@@ -38,7 +38,7 @@
     "coveralls": "2.11.2",
     "plato": "1.5.0",
     "mocha-performance": "0.1.0",
-    "jsonapi-server": "1.0.1"
+    "jsonapi-server": "1.0.2"
   },
   "scripts": {
     "test": "/bin/sh setupDatabase.sh && ./node_modules/mocha/bin/mocha --timeout 20000 -R spec ./test/*.js",
