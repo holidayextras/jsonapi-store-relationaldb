@@ -1,6 +1,6 @@
 {
   "name": "jsonapi-store-relationaldb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Relational data store for jsonapi-server.",
   "keywords": [
     "json:api",
@@ -27,7 +27,7 @@
     "lodash.assign": "3.2.0",
     "lodash.omit": "3.1.0",
     "lodash.pick": "3.1.0",
-    "sequelize": "3.14.0"
+    "sequelize": "3.14.2"
   },
   "devDependencies": {
     "mocha": "2.2.5",
