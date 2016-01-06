@@ -44,6 +44,19 @@ jsonApi.define({
  * Filtering happens at the database layer
  * Transactional queries
 
+
+### Getting to Production
+
+Getting this data store to production isn't too bad...
+
+1. Bring up your relational database stack.
+2. Create the databases - one database per resources, named identically. A `people` resource will need a `people` database.
+3. Create the database tables. You can call `(new RelationalDbStore()).populate()` to have this module attempt to create the require tables. If you enable debugging via `DEBUG=jsonApi:store:*` you'll see the create-table statements - you can target a local database, call poplate(), grab the queries, review them and finally run them against your production stack manually.
+3. Deploy your code.
+4. Celebrate.
+
+When deploying schema changes, you'll need to correct your database schema - database migrations are left as an exercise for the user. If your schema are likely to change frequently, maybe consider using a different (less schema-driven) data store.
+
 ### Gotchas
 
 Relational databases don't differentiate between `undefined` and `null` values. `Joi` does differentiate between `undefined` and `null` values. Some `undefined` properties will pass validation, whilst `null` properties may not. For example, the default articles resource contains a `created` attribute of type `"date"` - this won't pass validation with a `null` value, so the Joi schema will need tweaking.
