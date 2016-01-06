@@ -57,6 +57,8 @@ Getting this data store to production isn't too bad...
 
 When deploying schema changes, you'll need to correct your database schema - database migrations are left as an exercise for the user. If your schema are likely to change frequently, maybe consider using a different (less schema-driven) data store.
 
+When changing columns in a production database, a typical approach might be to create a new table that is a clone of the table in production, copy all data from the production table into the new table, run an ALTER-TABLE command on the new table to adjust the columns (this may take a while and will lock the table), then run a RENAME-TABLES to swap the production table out for the new one.
+
 ### Gotchas
 
 Relational databases don't differentiate between `undefined` and `null` values. `Joi` does differentiate between `undefined` and `null` values. Some `undefined` properties will pass validation, whilst `null` properties may not. For example, the default articles resource contains a `created` attribute of type `"date"` - this won't pass validation with a `null` value, so the Joi schema will need tweaking.
