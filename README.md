@@ -37,6 +37,8 @@ jsonApi.define({
 });
 ```
 
+**Note:** the `logging` property controls the logging of the emitted SQL and can either be `false` (which will mean it will be captured by the internal debugging module under the namespace `jsonApi:store:relationaldb:sequelize`) or a user provided function (e.g. `console.log`) to which a string containing the information to be logged will be passed as the first argument.
+
 ### Features
 
  * Search, Find, Create, Delete, Update
