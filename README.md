@@ -51,7 +51,7 @@ jsonApi.define({
 Getting this data store to production isn't too bad...
 
 1. Bring up your relational database stack.
-2. Create the database.
+2. Create the database(s).
 3. Create the database tables. You can call `(new RelationalDbStore()).populate()` to have this module attempt to create the require tables. If you enable debugging via `DEBUG=jsonApi:store:*` you'll see the create-table statements - you can target a local database, call populate(), grab the queries, review them and finally run them against your production stack manually.
 3. Deploy your code.
 4. Celebrate.
