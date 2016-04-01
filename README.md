@@ -30,6 +30,7 @@ jsonApi.define({
     dialect: "mysql",
     host: "localhost",
     port: 3306,
+    database: "jsonapi", // If not provided, defaults to the name of the resource
     username: "root",
     password: null,
     logging: false
@@ -50,8 +51,8 @@ jsonApi.define({
 Getting this data store to production isn't too bad...
 
 1. Bring up your relational database stack.
-2. Create the databases - one database per resources, named identically. A `people` resource will need a `people` database.
-3. Create the database tables. You can call `(new RelationalDbStore()).populate()` to have this module attempt to create the require tables. If you enable debugging via `DEBUG=jsonApi:store:*` you'll see the create-table statements - you can target a local database, call poplate(), grab the queries, review them and finally run them against your production stack manually.
+2. Create the database(s).
+3. Create the database tables. You can call `(new RelationalDbStore()).populate()` to have this module attempt to create the require tables. If you enable debugging via `DEBUG=jsonApi:store:*` you'll see the create-table statements - you can target a local database, call populate(), grab the queries, review them and finally run them against your production stack manually.
 3. Deploy your code.
 4. Celebrate.
 

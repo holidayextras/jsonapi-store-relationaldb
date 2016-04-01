@@ -9,10 +9,11 @@ module.children[2].exports = function() {
   var dbStore = new JsonapiStoreRelationalDb({
     dialect: "mysql",
     host: "localhost",
+    database: "jsonapi",
     port: 3306,
     username: "root",
     password: null,
-    logging: false
+    logging: console.log
   });
 
   // Keep the handler around for after the test rig is live
