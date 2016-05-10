@@ -12,6 +12,7 @@ module.children[2].exports = function() {
     port: 3306,
     username: "root",
     password: null,
+    database: "jsonapi-relationaldb",
     logging: null
   });
 
