@@ -1,7 +1,5 @@
 #!/bin/bash -x
 
-for database in articles photos comments tags people
-do
-  mysql -u root -e"DROP DATABASE IF EXISTS $database"
-  mysql -u root -e"CREATE DATABASE $database"
-done
+DB=$1
+mysql -u root -e "DROP DATABASE IF EXISTS \`$DB\`"
+mysql -u root -e "CREATE DATABASE \`$DB\`"

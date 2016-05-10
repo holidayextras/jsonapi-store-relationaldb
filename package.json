@@ -41,7 +41,7 @@
     "jsonapi-server": "1.0.2"
   },
   "scripts": {
-    "test": "/bin/sh setupDatabase.sh && ./node_modules/mocha/bin/mocha --timeout 20000 -R spec ./test/*.js",
+    "test": "./setupDatabase.sh jsonapi-relationaldb-test && ./node_modules/mocha/bin/mocha --timeout 20000 -R spec ./test/*.js",
     "start": "node example/server.js",
     "coveralls": "./node_modules/mocha/bin/mocha --require blanket --reporter mocha-lcov-reporter ./test/*.js | ./node_modules/coveralls/bin/coveralls.js",
     "coverage": "./node_modules/mocha/bin/mocha --timeout 20000 --require blanket --reporter html-cov ./test/*.js > coverage.html",
