@@ -1,3 +1,6 @@
+- 2016-05-13 - v1.1.0
+- 2016-05-13 - Support `jsonapi-server` v1.2
+- 2016-05-13 - Multiple resources per database
 - 2015-12-15 - v1.0.3
 - 2015-12-15 - Enable connections to remote databases
 - 2015-12-15 - v1.0.2
