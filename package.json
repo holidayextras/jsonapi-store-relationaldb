@@ -1,6 +1,6 @@
 {
   "name": "jsonapi-store-relationaldb",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Relational data store for jsonapi-server.",
   "keywords": [
     "json:api",
@@ -24,27 +24,29 @@
   "dependencies": {
     "async": "1.5.0",
     "debug": "2.2.0",
-    "lodash.assign": "3.2.0",
-    "lodash.omit": "3.1.0",
-    "lodash.pick": "3.1.0",
-    "sequelize": "3.14.2"
+    "joi": "6.10.1",
+    "lodash.assign": "4.0.8",
+    "lodash.omit": "4.2.1",
+    "lodash.pick": "4.2.0",
+    "sequelize": "3.23.0"
   },
   "devDependencies": {
-    "mocha": "2.2.5",
-    "mysql": "2.9.0",
-    "eslint": "0.24.1",
-    "blanket": "1.1.7",
-    "mocha-lcov-reporter": "0.0.2",
-    "coveralls": "2.11.2",
+    "blanket": "1.1.9",
+    "coveralls": "2.11.9",
+    "eslint": "2.9.0",
+    "jsonapi-server": "1.2.0",
+    "mocha": "2.4.5",
+    "mocha-lcov-reporter": "1.2.0",
+    "mocha-performance": "0.1.1",
+    "mysql": "2.10.2",
     "plato": "1.5.0",
-    "mocha-performance": "0.1.0",
-    "jsonapi-server": "1.0.2"
+    "v8-profiler": "5.6.4"
   },
   "scripts": {
-    "test": "/bin/sh setupDatabase.sh && ./node_modules/mocha/bin/mocha --timeout 20000 -R spec ./test/*.js",
+    "test": "./setupDatabase.sh jsonapi-relationaldb-test && ./node_modules/mocha/bin/mocha --timeout 20000 -R spec ./test/*.js",
     "start": "node example/server.js",
     "coveralls": "./node_modules/mocha/bin/mocha --require blanket --reporter mocha-lcov-reporter ./test/*.js | ./node_modules/coveralls/bin/coveralls.js",
-    "coverage": "./node_modules/mocha/bin/mocha --timeout 20000 --require blanket --reporter html-cov ./test/*.js > coverage.html",
+    "coverage": "./node_modules/mocha/bin/mocha --timeout 20000 --require blanket --reporter html-cov ./test/*.js > coverage.html || true",
     "complexity": "./node_modules/plato/bin/plato -r -d complexity lib",
     "performance": "node --allow-natives-syntax --harmony ./node_modules/mocha/bin/_mocha --reporter mocha-performance ./test/*.js",
     "lint": "./node_modules/.bin/eslint ./example/*.js ./lib/* ./test/*.js --quiet && echo '✔ All good!'"

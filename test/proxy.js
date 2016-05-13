@@ -12,6 +12,7 @@ module.children[2].exports = function() {
     port: 3306,
     username: "root",
     password: null,
+    database: "jsonapi-relationaldb-test",
     logging: false
   });
 
@@ -37,7 +38,7 @@ articles.onCreate.created = articles.onCreate.created.allow(null);
 // Before starting the test suite, load all example resouces, aka
 // the test fixtures, into the databases
 before(function(done) {
-  async.map(instances, function(dbStore, callback) {
+  async.each(instances, function(dbStore, callback) {
     dbStore.populate(callback);
   }, done);
 });
