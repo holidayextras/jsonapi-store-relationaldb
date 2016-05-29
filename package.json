@@ -28,13 +28,14 @@
     "lodash.assign": "^4.0.9",
     "lodash.omit": "^4.3.0",
     "lodash.pick": "^4.2.1",
+    "semver": "^5.1.0",
     "sequelize": "^3.23.3"
   },
   "devDependencies": {
     "blanket": "1.1.9",
     "coveralls": "^2.11.9",
     "eslint": "^2.11.0",
-    "jsonapi-server": "1.2.0",
+    "jsonapi-server": "holidayextras/jsonapi-server#2ba05c6",
     "mocha": "^2.5.3",
     "mocha-lcov-reporter": "^1.2.0",
     "mocha-performance": "^0.1.1",
