@@ -22,25 +22,25 @@
     "node": "*"
   },
   "dependencies": {
-    "async": "1.5.0",
-    "debug": "2.2.0",
+    "async": "^1.5.2",
+    "debug": "^2.2.0",
     "joi": "6.10.1",
-    "lodash.assign": "4.0.8",
-    "lodash.omit": "4.2.1",
-    "lodash.pick": "4.2.0",
-    "sequelize": "3.23.0"
+    "lodash.assign": "^4.0.9",
+    "lodash.omit": "^4.3.0",
+    "lodash.pick": "^4.2.1",
+    "sequelize": "^3.23.3"
   },
   "devDependencies": {
     "blanket": "1.1.9",
-    "coveralls": "2.11.9",
-    "eslint": "2.9.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^2.11.0",
     "jsonapi-server": "1.2.0",
-    "mocha": "2.4.5",
-    "mocha-lcov-reporter": "1.2.0",
-    "mocha-performance": "0.1.1",
-    "mysql": "2.10.2",
-    "plato": "1.5.0",
-    "v8-profiler": "5.6.4"
+    "mocha": "^2.5.3",
+    "mocha-lcov-reporter": "^1.2.0",
+    "mocha-performance": "^0.1.1",
+    "mysql": "^2.10.2",
+    "plato": "^1.5.0",
+    "v8-profiler": "^5.6.5"
   },
   "scripts": {
     "test": "./setupDatabase.sh jsonapi-relationaldb-test && ./node_modules/mocha/bin/mocha --timeout 20000 -R spec ./test/*.js",
