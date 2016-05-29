@@ -40,11 +40,14 @@
     "mocha-lcov-reporter": "^1.2.0",
     "mocha-performance": "^0.1.1",
     "mysql": "^2.11.1",
+    "pg": "^6.0.2",
+    "pg-hstore": "^2.3.2",
     "plato": "^1.6.0",
+    "sqlite3": "^3.1.4",
     "v8-profiler": "^5.6.5"
   },
   "scripts": {
-    "test": "./setupDatabase.sh jsonapi-relationaldb-test && ./node_modules/mocha/bin/mocha --timeout 20000 -R spec ./test/*.js",
+    "test": "./setupDatabase.sh jsonapi-relationaldb-test $SEQUELIZE_DIALECT && ./node_modules/mocha/bin/mocha --timeout 20000 -R spec ./test/*.js",
     "start": "node example/server.js",
     "coveralls": "./node_modules/mocha/bin/mocha --require blanket --reporter mocha-lcov-reporter ./test/*.js | ./node_modules/coveralls/bin/coveralls.js",
     "coverage": "./node_modules/mocha/bin/mocha --timeout 20000 --require blanket --reporter html-cov ./test/*.js > coverage.html || true",
