@@ -1,3 +1,5 @@
+- 2016-05-31 - v1.2.0
+- 2016-05-31 - Use latest `jsonapi-server` processed filter
 - 2016-05-13 - v1.1.0
 - 2016-05-13 - Support `jsonapi-server` v1.2
 - 2016-05-13 - Multiple resources per database
