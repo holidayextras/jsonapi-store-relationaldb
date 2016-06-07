@@ -1,3 +1,5 @@
+- 2016-06-07 - v1.2.1
+- 2016-06-07 - Fixing bug in populate()
 - 2016-05-31 - v1.2.0
 - 2016-05-31 - Use latest `jsonapi-server` processed filter
 - 2016-05-13 - v1.1.0
