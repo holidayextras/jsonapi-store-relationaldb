@@ -1,3 +1,5 @@
+- 2016-07-01 - v1.2.3
+- 2016-07-01 - Deletion errors fail transactions
 - 2016-06-29 - v1.2.2
 - 2016-06-29 - Fix filtering bug
 - 2016-06-07 - v1.2.1
