@@ -1,3 +1,5 @@
+- 2016-07-04 - v1.2.4
+- 2016-07-04 - Use stricter MySQL transaction isolation READ_COMMITTED
 - 2016-07-01 - v1.2.3
 - 2016-07-01 - Deletion errors fail transactions
 - 2016-06-29 - v1.2.2
