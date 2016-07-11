@@ -1,6 +1,6 @@
 {
   "name": "jsonapi-store-relationaldb",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Relational data store for jsonapi-server.",
   "keywords": [
     "json:api",
@@ -35,7 +35,7 @@
     "blanket": "1.1.9",
     "coveralls": "^2.11.9",
     "eslint": "^2.11.0",
-    "jsonapi-server": "^1.15.0",
+    "jsonapi-server": "^1.15.4",
     "mocha": "^2.5.3",
     "mocha-lcov-reporter": "^1.2.0",
     "mocha-performance": "^0.1.1",
