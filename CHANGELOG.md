@@ -1,3 +1,5 @@
+- 2016-07-11 - v1.2.5
+- 2016-07-11 - Fixing bug when concurrently updating the same resource id
 - 2016-07-04 - v1.2.4
 - 2016-07-04 - Use stricter MySQL transaction isolation READ_COMMITTED
 - 2016-07-01 - v1.2.3
