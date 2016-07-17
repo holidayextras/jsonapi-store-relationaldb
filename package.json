@@ -28,8 +28,8 @@
     "lodash.assign": "^4.0.9",
     "lodash.omit": "^4.3.0",
     "lodash.pick": "^4.2.1",
-    "semver": "^5.1.0",
-    "sequelize": "^3.23.3"
+    "semver": "^5.3.0",
+    "sequelize": "^3.23.4"
   },
   "devDependencies": {
     "blanket": "^1.2.3",
