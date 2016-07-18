@@ -1,3 +1,6 @@
+- 2016-07-18 - v1.2.6
+- 2016-07-18 - Fix case insensitive matches for PostgreSQL
+- 2016-07-18 - Enable multi-dialect support for tests
 - 2016-07-11 - v1.2.5
 - 2016-07-11 - Fixing bug when concurrently updating the same resource id
 - 2016-07-04 - v1.2.4
