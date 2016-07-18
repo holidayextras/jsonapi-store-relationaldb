@@ -1,10 +1,15 @@
 language: node_js
 node_js:
   - "0.10"
+  - "4"
+services:
+  - mysql
+  - postgresql
 script: "npm run $TEST_STEP"
 env:
   matrix:
     - TEST_STEP=lint
-    - TEST_STEP=test
+    - TEST_STEP=test SEQUELIZE_DIALECT=mysql
+    - TEST_STEP=test SEQUELIZE_DIALECT=postgres
 notifications:
   email: false

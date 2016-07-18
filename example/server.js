@@ -1,21 +1,16 @@
 "use strict";
 var async = require("async");
+var config = require("../lib/config.js");
 var JsonapiStoreRelationalDb = require("..");
+
 var instances = [ ];
+
+var DATABASE = "jsonapi-relationaldb";
 
 // Replace the MemoryStore default handler with our own version
 require("jsonapi-server/lib/MemoryHandler");
-module.children[2].exports = function() {
-  var dbStore = new JsonapiStoreRelationalDb({
-    dialect: "mysql",
-    host: "localhost",
-    port: 3306,
-    username: "root",
-    password: null,
-    database: "jsonapi-relationaldb",
-    logging: null
-  });
-
+module.children[3].exports = function() {
+  var dbStore = new JsonapiStoreRelationalDb(config(DATABASE));
   // Keep the handler around for after the test rig is live
   instances.push(dbStore);
   return dbStore;
