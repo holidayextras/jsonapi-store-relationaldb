@@ -1,4 +1,5 @@
-- 2016-07-18 - v1.2.6
+- 2016-07-23 - v1.2.7
+- 2016-07-23 - Updating sequelize for security patch
 - 2016-07-18 - Fix case insensitive matches for PostgreSQL
 - 2016-07-18 - Enable multi-dialect support for tests
 - 2016-07-11 - v1.2.5
