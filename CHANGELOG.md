@@ -1,3 +1,5 @@
+- 2016-07-28 - v1.2.7
+- 2016-07-28 - Pin `sequelize-3.23.4`
 - 2016-07-18 - v1.2.6
 - 2016-07-18 - Fix case insensitive matches for PostgreSQL
 - 2016-07-18 - Enable multi-dialect support for tests
