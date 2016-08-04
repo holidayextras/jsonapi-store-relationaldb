@@ -1,3 +1,6 @@
+- 2016-08-04 - v1.2.8
+- 2016-08-04 - Update `sequelize` dependency to latest version
+- 2016-08-04 - Optimised searches filtered by related resource
 - 2016-07-28 - v1.2.7
 - 2016-07-28 - Pin `sequelize-3.23.4`
 - 2016-07-18 - v1.2.6
