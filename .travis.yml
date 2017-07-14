@@ -1,10 +1,10 @@
 language: node_js
-node_js:
-  - "0.10"
-  - "4"
 services:
   - mysql
   - postgresql
+node_js:
+  - 4
+  - 6
 script: "npm run $TEST_STEP"
 env:
   matrix:

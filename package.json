@@ -22,9 +22,9 @@
     "node": "*"
   },
   "dependencies": {
-    "async": "^1.5.2",
+    "async": "2.5.0",
     "debug": "^2.2.0",
-    "joi": "6.10.1",
+    "joi": "10.6.0",
     "lodash.assign": "^4.0.9",
     "lodash.omit": "^4.3.0",
     "lodash.pick": "^4.2.1",
@@ -34,9 +34,11 @@
   "devDependencies": {
     "blanket": "^1.2.3",
     "coveralls": "^2.11.11",
-    "eslint": "^2.11.0",
-    "jsonapi-server": "^1.15.4",
-    "mocha": "^2.5.3",
+    "eslint": "4.2.0",
+    "jsonapi-server": "3.0.2",
+    "lokka": "1.7.0",
+    "lokka-transport-http": "1.6.1",
+    "mocha": "3.4.2",
     "mocha-lcov-reporter": "^1.2.0",
     "mocha-performance": "^0.1.1",
     "mysql": "^2.11.1",
