@@ -36,6 +36,8 @@
     "coveralls": "^2.11.11",
     "eslint": "4.2.0",
     "jsonapi-server": "3.0.2",
+    "lokka": "1.7.0",
+    "lokka-transport-http": "1.6.1",
     "mocha": "3.4.2",
     "mocha-lcov-reporter": "^1.2.0",
     "mocha-performance": "^0.1.1",
