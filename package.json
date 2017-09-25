@@ -55,7 +55,9 @@
     "coverage": "./node_modules/mocha/bin/mocha --timeout 20000 --require blanket --reporter html-cov ./test/*.js > coverage.html || true",
     "complexity": "./node_modules/plato/bin/plato -r -d complexity lib",
     "performance": "node --allow-natives-syntax --harmony ./node_modules/mocha/bin/_mocha --reporter mocha-performance ./test/*.js",
-    "lint": "./node_modules/.bin/eslint ./example/*.js ./lib/* ./test/*.js --quiet && echo '✔ All good!'"
+    "lint": "./node_modules/.bin/eslint ./example/*.js ./lib/* ./test/*.js --quiet && echo '✔ All good!'",
+    "ci": "npm run lint && SEQUELIZE_DIALECT=mysql npm run test && SEQUELIZE_DIALECT=postgres npm run test"
+
   },
   "config": {
     "blanket": {
