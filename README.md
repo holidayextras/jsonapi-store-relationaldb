@@ -1,5 +1,3 @@
-### :warning: !!! GraphQL support is incomplete for the current 2.0.0-alpha release !!! :warning:
-
 [![Coverage Status](https://coveralls.io/repos/holidayextras/jsonapi-store-relationaldb/badge.svg?branch=master&service=github)](https://coveralls.io/github/holidayextras/jsonapi-store-relationaldb?branch=master)
 [![Build Status](https://travis-ci.org/holidayextras/jsonapi-store-relationaldb.svg?branch=master)](https://travis-ci.org/holidayextras/jsonapi-store-relationaldb)
 [![npm version](https://badge.fury.io/js/jsonapi-store-relationaldb.svg)](http://badge.fury.io/js/jsonapi-store-relationaldb)
