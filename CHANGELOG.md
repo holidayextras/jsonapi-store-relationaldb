@@ -4,7 +4,6 @@
 - 2017-09-25 - Support Node.js 8
 - 2017-09-25 - Only Node.js >= 4.5 is now supported
 - 2017-09-25 - Support latest `jsonapi-server`
-- 2017-09-25 - v2.0.0-alpha
 - 2016-08-09 - v1.2.8
 - 2016-08-09 - Update `sequelize` dependency to latest version
 - 2016-08-09 - Optimised searches filtered by related resource
