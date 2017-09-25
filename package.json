@@ -40,7 +40,7 @@
     "mocha-lcov-reporter": "1.3.0",
     "mocha-performance": "0.1.1",
     "mysql": "2.14.1",
-    "pg": "7.3.0",
+    "pg": "^6.4.2",
     "pg-hstore": "2.3.2",
     "plato": "1.7.0",
     "sqlite3": "3.1.12",
