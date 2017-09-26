@@ -62,6 +62,18 @@ When deploying schema changes, you'll need to correct your database schema - dat
 
 When changing columns in a production database, a typical approach might be to create a new table that is a clone of the table in production, copy all data from the production table into the new table, run an ALTER-TABLE command on the new table to adjust the columns (this may take a while and will lock the table), then run a RENAME-TABLES to swap the production table out for the new one.
 
+NOTE: 
+When populating database tables, you can use the `force` config option to DROP and CREATE tables.
+This is helpful in development stage, when your data doesn't matter and you
+want your Tables schemas to change according to the DAOs without having to
+manually write migrations
+
+```js
+(new RelationalDbStore()).populate({force: true}, () => {
+  //tables dropped and created
+})
+```
+
 ### Gotchas
 
 Relational databases don't differentiate between `undefined` and `null` values. `Joi` does differentiate between `undefined` and `null` values. Some `undefined` properties will pass validation, whilst `null` properties may not. For example, the default articles resource contains a `created` attribute of type `"date"` - this won't pass validation with a `null` value, so the Joi schema will need tweaking.
