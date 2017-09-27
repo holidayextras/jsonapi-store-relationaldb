@@ -1,3 +1,6 @@
+- 2017-09-27 - v2.1.0
+- 2017-09-27 - Migrate to Sequelize v4
+- 2017-09-27 - Use native Array support for PostgreSQL
 - 2017-09-26 - v2.0.0
 - 2017-09-26 - Support Node.js 8
 - 2017-09-26 - Only Node.js >= 4.5 is now supported
