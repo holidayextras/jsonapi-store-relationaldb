@@ -15,7 +15,7 @@ npm start
 
 Every pull request that changes code in this project needs to either fix an existing tst case or have some form of regression test with it. That might take the shape of some additional asserts in key places within existing tests, it might involve new tests. We write tests to ensure features don't get lost - protect your feature by writing good tests!
 
-To verify all the code changes pass our style guidelines:
+To verify all the code changes pass our [JavaScript Standard Style](https://standardjs.com/) guidelines:
 ```
 npm run lint
 ```
