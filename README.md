@@ -26,6 +26,9 @@ jsonApi.define({
   resource: "comments",
   handlers: new RelationalDbStore({
     dialect: "mysql",
+    dialectOptions: {
+      supportBigNumbers: true
+    },
     host: "localhost",
     port: 3306,
     database: "jsonapi", // If not provided, defaults to the name of the resource
