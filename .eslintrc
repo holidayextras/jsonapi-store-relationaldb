@@ -1,13 +1,20 @@
+
 {
-  "extends": "eslint:recommended",
-  "globals": {
-  },
+  "extends": "standard",
+  "plugins": [
+    "standard",
+    "promise",
+    "mocha"
+  ],
   "env": {
-    "node": true,
-    "mocha": true
+    "mocha": true,
+    "node": true
   },
   "rules": {
-    "no-underscore-dangle": [ 0 ],
-    "curly": [2, "multi-line"]
+    "mocha/no-exclusive-tests": "error",
+    "mocha/no-global-tests": "error",
+    "mocha/no-identical-title": "error",
+    "mocha/no-nested-tests": "error",
+    "mocha/no-sibling-hooks": "error"
   }
 }
