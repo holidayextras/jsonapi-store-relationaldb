@@ -1,3 +1,9 @@
+- 2017-10-02 - v3.0.0
+- 2017-10-02 - Allow injecting a Sequelize instance.
+- 2017-10-02 - Fix npm scripts on MS Windows.
+- 2017-10-02 - Allow specifying `dialectOptions` when configuring handler.
+- 2017-10-02 - Use JSONB in PostgreSQL for optimised JSON object storage.
+- 2017-10-02 - Only support PostgreSQL >= 9.4 (for required JSONB support).
 - 2017-09-27 - v2.1.0
 - 2017-09-27 - Migrate to Sequelize v4
 - 2017-09-27 - Use native Array support for PostgreSQL

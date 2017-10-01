@@ -1,6 +1,6 @@
 {
   "name": "jsonapi-store-relationaldb",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Relational data store for jsonapi-server.",
   "keywords": [
     "json:api",
