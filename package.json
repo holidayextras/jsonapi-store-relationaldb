@@ -23,15 +23,15 @@
   },
   "dependencies": {
     "async": "2.5.0",
-    "debug": "3.0.1",
+    "debug": "3.1.0",
     "joi": "11.1.1",
     "lodash": "4.17.4",
     "semver": "5.4.1",
-    "sequelize": "4.11.1"
+    "sequelize": "4.13.1"
   },
   "devDependencies": {
     "blanket": "1.2.3",
-    "coveralls": "2.13.1",
+    "coveralls": "3.0.0",
     "eslint": "4.8.0",
     "eslint-config-standard": "10.2.1",
     "eslint-plugin-import": "2.7.0",
@@ -49,7 +49,7 @@
     "pg": "7.3.0",
     "pg-hstore": "2.3.2",
     "plato": "1.7.0",
-    "sqlite3": "3.1.12",
+    "sqlite3": "3.1.13",
     "v8-profiler": "5.7.0"
   },
   "scripts": {
