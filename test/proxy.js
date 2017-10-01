@@ -21,7 +21,10 @@ var fs = require("fs");
 var path = require("path");
 var base = path.join(__dirname, "../node_modules/jsonapi-server/test");
 fs.readdirSync(base).forEach(function(filename) {
-  require(path.join(base, filename));
+  var filePath = path.join(base, filename)
+  if (!fs.lstatSync(filePath).isDirectory()) {
+    require(filePath)
+  }
 });
 
 // MySQL doesn't differentiate between undefined and null.
