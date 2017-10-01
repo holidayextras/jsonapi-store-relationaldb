@@ -1,5 +1,3 @@
-### :warning: !!! GraphQL support is incomplete for the current 2.0.0-alpha release !!! :warning:
-
 [![Coverage Status](https://coveralls.io/repos/holidayextras/jsonapi-store-relationaldb/badge.svg?branch=master&service=github)](https://coveralls.io/github/holidayextras/jsonapi-store-relationaldb?branch=master)
 [![Build Status](https://travis-ci.org/holidayextras/jsonapi-store-relationaldb.svg?branch=master)](https://travis-ci.org/holidayextras/jsonapi-store-relationaldb)
 [![npm version](https://badge.fury.io/js/jsonapi-store-relationaldb.svg)](http://badge.fury.io/js/jsonapi-store-relationaldb)
@@ -18,8 +16,6 @@ This project conforms to the specification laid out in the [jsonapi-server handl
  * Postgres
  * MySQL
  * MariaDB
- * SQLite
- * Microsoft SQL Server
 
 ### Usage
 
@@ -30,6 +26,9 @@ jsonApi.define({
   resource: "comments",
   handlers: new RelationalDbStore({
     dialect: "mysql",
+    dialectOptions: {
+      supportBigNumbers: true
+    },
     host: "localhost",
     port: 3306,
     database: "jsonapi", // If not provided, defaults to the name of the resource
@@ -63,6 +62,14 @@ Getting this data store to production isn't too bad...
 When deploying schema changes, you'll need to correct your database schema - database migrations are left as an exercise for the user. If your schema are likely to change frequently, maybe consider using a different (less schema-driven) data store.
 
 When changing columns in a production database, a typical approach might be to create a new table that is a clone of the table in production, copy all data from the production table into the new table, run an ALTER-TABLE command on the new table to adjust the columns (this may take a while and will lock the table), then run a RENAME-TABLES to swap the production table out for the new one.
+
+**Note:** When populating database tables, you can use the `force` config option to DROP and CREATE tables. This is helpful in development stage, when your data doesn't matter and you want your Tables schemas to change according to the DAOs without having to manually write migrations.
+
+```js
+(new RelationalDbStore()).populate({force: true}, () => {
+  //tables dropped and created
+})
+```
 
 ### Gotchas
 

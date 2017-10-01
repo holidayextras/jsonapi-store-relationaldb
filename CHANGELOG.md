@@ -1,9 +1,12 @@
-- 2017-09-25 - v2.0.0-alpha
-- 2017-09-25 -  :warning: GraphQL support is incomplete in this alpha release
-- 2017-09-25 - Bump all dependencies
-- 2017-09-25 - Support Node.js 8
-- 2017-09-25 - Only Node.js >= 4.5 is now supported
-- 2017-09-25 - Support latest `jsonapi-server`
+- 2017-09-27 - v2.1.0
+- 2017-09-27 - Migrate to Sequelize v4
+- 2017-09-27 - Use native Array support for PostgreSQL
+- 2017-09-26 - v2.0.0
+- 2017-09-26 - Support Node.js 8
+- 2017-09-26 - Only Node.js >= 4.5 is now supported
+- 2017-09-26 - Support latest `jsonapi-server`
+- 2017-09-26 - Bug fix: correctly support arrays
+- 2017-09-26 - Bug fix: properly fix table names
 - 2016-08-09 - v1.2.8
 - 2016-08-09 - Update `sequelize` dependency to latest version
 - 2016-08-09 - Optimised searches filtered by related resource
