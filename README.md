@@ -16,8 +16,6 @@ This project conforms to the specification laid out in the [jsonapi-server handl
  * Postgres
  * MySQL
  * MariaDB
- * SQLite
- * Microsoft SQL Server
 
 ### Usage
 
