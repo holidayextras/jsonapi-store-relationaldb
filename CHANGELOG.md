@@ -1,3 +1,5 @@
+- 2017-10-09 - v4.0.0
+- 2017-10-09 - Optimised Sequelize UUID column type for ids.
 - 2017-10-02 - v3.0.0
 - 2017-10-02 - Allow injecting a Sequelize instance.
 - 2017-10-02 - Fix npm scripts on MS Windows.
