@@ -19,7 +19,7 @@
     "url": "https://github.com/holidayextras/jsonapi-store-relationaldb.git"
   },
   "engines": {
-    "node": ">=4.5"
+    "node": ">=6"
   },
   "dependencies": {
     "async": "2.5.0",
