@@ -4,8 +4,9 @@
 [![Code Climate](https://codeclimate.com/github/holidayextras/jsonapi-store-relationaldb/badges/gpa.svg)](https://codeclimate.com/github/holidayextras/jsonapi-store-relationaldb)
 [![Dependencies Status](https://david-dm.org/holidayextras/jsonapi-store-relationaldb.svg)](https://david-dm.org/holidayextras/jsonapi-store-relationaldb)
 
-
 # jsonapi-store-relationaldb
+
+#### :warning: PLEASE NOTE: Version 4.x releases erroneously created columns for `string` properties as Sequelize `text` type. The behaviour in version 5.x has reverted back to creating columns with the Sequelize `string` type, which is the more adequate type and was the behaviour in versions 3.x and older. The `text` columns created by version 4.x will need to be manually migrated to `string` columns.
 
 `jsonapi-store-relationaldb` is a relational database backed data store for [`jsonapi-server`](https://github.com/holidayextras/jsonapi-server).
 

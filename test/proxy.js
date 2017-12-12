@@ -20,11 +20,8 @@ module.children[3].exports = function () {
 var fs = require('fs')
 var path = require('path')
 var base = path.join(__dirname, '../node_modules/jsonapi-server/test')
-fs.readdirSync(base).forEach(function (filename) {
-  var filePath = path.join(base, filename)
-  if (!fs.lstatSync(filePath).isDirectory()) {
-    require(filePath)
-  }
+fs.readdirSync(base).forEach(filename => {
+  if (filename.endsWith('.js')) require(path.join(base, filename))
 })
 
 // MySQL doesn't differentiate between undefined and null.
