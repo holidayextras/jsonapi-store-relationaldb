@@ -39,7 +39,7 @@
     "eslint-plugin-node": "5.2.0",
     "eslint-plugin-promise": "3.5.0",
     "eslint-plugin-standard": "3.0.1",
-    "jsonapi-server": "3.2.1",
+    "jsonapi-server": "4.1.2",
     "lokka": "1.7.0",
     "lokka-transport-http": "1.6.1",
     "mocha": "4.0.1",
