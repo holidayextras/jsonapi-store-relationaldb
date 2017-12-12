@@ -1,3 +1,7 @@
+- 2017-12-12 - v5.0.0
+- 2017-12-12 - Support latest version of `jsonapi-server` with store managed id support.
+- 2017-12-12 - Revert column type for `string` properties back to `string` from `text`.
+- 2017-12-12 - Remove support for Node.js 4.
 - 2017-10-09 - v4.0.0
 - 2017-10-09 - Optimised Sequelize UUID column type for ids.
 - 2017-10-02 - v3.0.0
