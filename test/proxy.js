@@ -33,7 +33,7 @@ articles.onCreate.created = articles.onCreate.created.allow(null)
 // Before starting the test suite, load all example resouces, aka
 // the test fixtures, into the databases
 before(function (done) {
-  async.each(instances, function (dbStore, callback) {
+  async.eachSeries(instances, function (dbStore, callback) {
     dbStore.populate(callback)
   }, done)
 })
