@@ -14,6 +14,10 @@ case "$DIALECT" in
         ;;
     sqlite)
         ;;
+    mssql)
+        sqlcmd -u sa -P '' -Q "DROP DATABASE IF EXISTS \`$DB\`"
+        sqlcmd -u sa -P '' -Q "CREATE DATABASE \`$DB\`"
+        ;;
     *)
         echo "unknown database dialect: $DIALECT"
         exit 1
