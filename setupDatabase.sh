@@ -5,6 +5,8 @@ DIALECT=${2:-mysql}
 
 case "$DIALECT" in
     mysql)
+        /usr/local/bin/mysql.server start
+        mysql -e "ALTER USER root IDENTIFIED WITH mysql_native_password BY \'\'"
         mysql -u root -e "DROP DATABASE IF EXISTS \`$DB\`"
         mysql -u root -e "CREATE DATABASE \`$DB\`"
         ;;
