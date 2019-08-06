@@ -1,0 +1,19 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.associations": { "**/cicd/*.yml": "azure-pipelines" },
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "prettier.tslintIntegration": true,
+  "[typescript]": { "editor.codeActionsOnSave": { "source.organizeImports": true } },
+  "azureFunctions.projectRuntime": "~2",
+  "azureFunctions.projectLanguage": "JavaScript",
+  "azureFunctions.templateFilter": "Verified",
+  "azureFunctions.deploySubpath": "./backend/functions/.funcpack",
+  "azureFunctions.preDeployTask": "installExtensions",
+  "files.exclude": {
+    "obj": true,
+    "bin": true
+  },
+  "debug.internalConsoleOptions": "neverOpen"
+}
