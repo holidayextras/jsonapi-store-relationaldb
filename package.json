@@ -1,6 +1,6 @@
 {
   "name": "@dcp/jsonapi-store-relationaldb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Relational data store for jsonapi-server.",
   "keywords": [
     "json:api",
